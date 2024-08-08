@@ -119,6 +119,8 @@ class DatasetPatchBuilder(MetadataPatchProposal):
         return self
 
     def add_upstream_lineage(self, upstream: Upstream) -> "DatasetPatchBuilder":
+        print('xd')
+
         self._add_patch(
             UpstreamLineage.ASPECT_NAME,
             "add",
